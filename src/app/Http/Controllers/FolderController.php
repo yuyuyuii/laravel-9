@@ -12,7 +12,7 @@ class FolderController extends Controller
     return view('folders/create');
   }
 
-  public function Create(CreateFolder $reuest){//独自のバリデーション
+  public function Create(CreateFolder $request){//独自のバリデーション
     //フォルダモデルのインスタンスを作成する
     $folder = new Folder();
     //耐鳥に入力値を代入する
